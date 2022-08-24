@@ -92,3 +92,44 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+# App Description and Instructions:
+
+- App contains 2 main pages, Home and Search.
+
+## Home
+
+- Shows three categories/shelves of books
+- Each book has an arrow that opens a drop down menu contains all allowed categories
+- Any book can be moved to any shelf or we can remove it by selecting 'none'
+
+### Components
+
+- 1. Header: only shows the main title of the app
+- 2. Shelves: for handling the main categories
+- 3. Shelf: for handling each shelf which is one of shelves
+- 4. Book: for showing everything about the book itself such as: its image, title, and authors
+- 5. ShelfSelector: for handling the drop down menu and its options
+- 6. AddBook: its the only button in this page. it's for navigating to the search page using routing
+
+## Search
+
+- It's an empty page that only contains a search bar to search about what we need
+- When we start typing any word for example react or redux, the page starts shows the related books
+- when we look at the drop down that is on each book we can know if this book is already sorted in a shelf or it's brand new.
+- We can also use the drop down menu to add a book to a any shelf or move it too.
+- When we click on the left arrow that located in the top left page, we navigate to the home page and we will fine the book sorted correctly in its shelf that we selected from the search page.
+
+### Components
+
+- Uses the main page of Search and the same Book, and shelfSelector components
+
+## App API:
+
+- In this app, we used some APIs that live in the apis/BooksAPI component:
+- 1. getAll():
+     for getting all books into the main home page
+- 2. update(book, shelf):
+     FOR updating any shelf that contains a certain book and
+- 3. search(query):
+     for getting books that match the search word.
