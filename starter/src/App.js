@@ -53,6 +53,7 @@ function App() {
       if (query === '') setSearchResult([]);
     } catch (error) {
       console.error('err ' + error.error);
+      setSearchResult([]);
     }
   };
 

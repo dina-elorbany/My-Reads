@@ -21,7 +21,11 @@ const Book = ({ book, updateShelf }) => {
             style={{
               width: 128,
               height: 192,
-              backgroundImage: `url("${book.imageLinks.smallThumbnail}")`,
+              backgroundImage: `url("${
+                book.imageLinks && book.imageLinks.smallThumbnail
+                  ? book.imageLinks.smallThumbnail
+                  : 'none'
+              }")`,
             }}
           ></div>
           <div className='book-shelf-changer'>
