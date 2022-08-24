@@ -1,4 +1,4 @@
-# MyReads Project
+<!-- # MyReads Project
 
 This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
 
@@ -34,9 +34,9 @@ To get started developing right away:
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed. -->
 
-## Backend Server
+<!-- ## Backend Server
 
 To simplify your development process, we've provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
 
@@ -91,11 +91,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+For details, check out [CONTRIBUTING.md](CONTRIBUTING.md). -->
 
 # App Description and Instructions:
 
-- App contains 2 main pages, Home and Search.
+- It's a book tracker App contains 2 main pages, Home and Search.
 
 ## Home
 
@@ -127,9 +127,35 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 ## App API:
 
 - In this app, we used some APIs that live in the apis/BooksAPI component:
-- 1. getAll():
+- 1. `getAll()`:
      for getting all books into the main home page
-- 2. update(book, shelf):
+- 2. `update(book, shelf)`:
      FOR updating any shelf that contains a certain book and
-- 3. search(query):
+- 3. `search(query)`:
      for getting books that match the search word.
+
+# Installation and Start:
+
+### Download app:
+
+- `npm install` for installing all its dependencies.
+
+### Start app:
+
+- `npm start` for start localhost all.
+
+# Images
+
+> Home Page:
+
+![](https://i.ibb.co/25N56fM/screenshot-home.png)
+
+![](https://i.ibb.co/MRc9KhB/screenshot-shelves-options.png)
+
+> Search Page:
+
+![](https://i.ibb.co/FB9XyHw/screenshot-search-empty-page.png)
+
+![](https://i.ibb.co/k1f5xd3/screenshot-search-result.png)
+
+![](https://i.ibb.co/47qkTSL/Screenshot-check-book-shelf.png)
