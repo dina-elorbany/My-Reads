@@ -93,6 +93,8 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md). -->
 
+# MyReads Project
+
 # App Description and Instructions:
 
 - It's a book tracker App contains 2 main pages, Home and Search.

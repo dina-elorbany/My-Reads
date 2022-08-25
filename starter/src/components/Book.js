@@ -21,11 +21,12 @@ const Book = ({ book, updateShelf }) => {
             style={{
               width: 128,
               height: 192,
-              backgroundImage: `url("${
-                book.imageLinks && book.imageLinks.smallThumbnail
-                  ? book.imageLinks.smallThumbnail
-                  : 'none'
-              }")`,
+              // backgroundImage: `url("${
+              //   book.imageLinks && book.imageLinks.smallThumbnail
+              //     ? book.imageLinks.smallThumbnail
+              //     : 'none'
+              // }")`,
+              backgroundImage: `url("${book?.imageLinks?.smallThumbnail}")`,
             }}
           ></div>
           <div className='book-shelf-changer'>
@@ -37,7 +38,7 @@ const Book = ({ book, updateShelf }) => {
           </div>
         </div>
         <div className='book-title'>{book.title}</div>
-        <div className='book-authors'>{book.authors.join(', ')}</div>
+        <div className='book-authors'>{book.authors?.join(', ')}</div>
       </div>
     </li>
   );
